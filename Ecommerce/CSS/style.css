@@ -1,0 +1,132 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(226, 225, 225);
+}
+.mx-auto {
+    margin-right: unset !important;
+  }
+  .navbar{
+      background-color:rgb(190, 101, 101);
+  }
+.carousel-inner{
+  margin-top: 135px;
+}
+
+
+
+
+  .carousel-item img{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+  }
+  #section-tital{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+#section-tital span{
+  border-bottom: 2px dashed black;
+}
+.card{
+  width: 16rem !important;
+  height: 30rem !important;
+}
+.card-header{
+  width: 16rem !important;
+}
+.card-header img, #large-img img, #gallery img, #gallery div img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#large-img{
+  width: 14rem;
+  height: 14rem;
+}
+#large-img img{
+  border-radius: 5px;
+}
+#gallery{
+  display: flex;
+}
+#gallery div{
+  width: 50px;
+  height: 40px;
+  margin: 3px;
+}
+#gallery div img{
+  transition: transform 1s;
+}
+#gallery div img:hover{
+  height: 12rem;
+  width: 12rem;
+  transform: translateY(-50%);
+}
+img{
+  cursor: pointer;
+}
+.card-header img{
+  transition: transform 1s;
+}
+.card-header img:hover{
+  transform: scale(1.1);
+}
+
+#about{
+  background:url(img/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact{
+  background:url(img/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact .col-6{
+  background-color: tan;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 992px)
+{
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .carousel-inner,.carousel-item{
+      height: 80vh;
+  }
+}
+@media (min-width: 768px)
+{
+  .carousel-inner,.carousel-item{
+      height: 70vh;
+  }
+}
+@media (max-width: 767px)
+{
+  .carousel-inner,.carousel-item{
+      height: 55vh;
+  }
+  #about .col-8{
+    width: 90% !important;
+  
+  }
+  #contact .col-6{
+    width: 90% !important;
+  }
+}
